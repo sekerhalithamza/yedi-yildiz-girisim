@@ -1,0 +1,1 @@
+# yedi-yildiz-girisim
