@@ -1,0 +1,51 @@
+$colors: (
+  "light": #fafafa,
+  "light-2": #f3f3f3,
+  "light-3": #e9e9e9,
+  "dark": #121212,
+  "dark-2": #222,
+  "dark-3": #333,
+  "primary": #080c84,
+);
+
+$font-sizes: (
+  "xs": 1.2rem,
+  "sm": 1.4rem,
+  "base": 1.6rem,
+  "l": 2rem,
+  "xl": 2.4rem,
+  "xxl": 3.2rem,
+  "xxxl": 3.6rem,
+  "xxxxl": 8.6rem,
+);
+
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+$breakpoints: (
+  "bg-desktop": 110em,
+  // 1760 px,
+  "md-desktop": 100em,
+  // 1600 px,
+  "desktop": 90em,
+  // 1440 px,
+  "tablet": 65.625em,
+  // 1050 px,
+  "tablet-portrait": 46.875em,
+  // 750 px
+  "mobile": 40.625em,
+  // 650 px
+  "sm-mobile": 18.75em,
+  // 300 px
+  "xs-mobile": 12.5em,
+  // 200 px
+  "landscape":
+    (
+      min-width: 40.625em,
+      max-height: 31.25em,
+    ),
+);

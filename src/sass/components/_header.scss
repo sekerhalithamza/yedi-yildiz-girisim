@@ -1,0 +1,35 @@
+header.header {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    &__nav {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: map-get($colors, dark);
+      gap: 2rem;
+      justify-content: center;
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: map-get($colors, light);
+        height: min-content;
+        padding-inline: 1rem;
+        padding-block: 2rem;
+        &-icon {
+          fill: map-get($colors, light) !important;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  img {
+    height: 100px;
+    aspect-ratio: 20/7;
+    object-fit: contain;
+    align-self: center;
+    padding: 2rem 6rem;
+  }
+}
