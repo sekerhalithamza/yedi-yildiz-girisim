@@ -1,6 +1,7 @@
 header.header {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   .header {
     &__nav {
@@ -19,8 +20,8 @@ header.header {
         padding-block: 2rem;
         &-icon {
           fill: map-get($colors, light) !important;
-          width: 24px;
-          height: 24px;
+          width: 16px;
+          height: 16px;
         }
       }
     }
