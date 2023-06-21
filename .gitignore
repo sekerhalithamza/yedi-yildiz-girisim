@@ -3,3 +3,4 @@ public/
 node_modules/*
 node_mod/
 *.css
+node_modules

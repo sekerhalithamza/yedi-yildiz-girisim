@@ -26,11 +26,13 @@ header.header {
       }
     }
   }
-  img {
-    height: 100px;
-    aspect-ratio: 20/7;
+  & .header__nav__logo-wrapper {
     object-fit: contain;
     align-self: center;
-    padding: 2rem 6rem;
+    .header__nav__logo {
+      height: 90px;
+      aspect-ratio: 20/7;
+      padding: 2rem 6rem;
+    }
   }
 }
