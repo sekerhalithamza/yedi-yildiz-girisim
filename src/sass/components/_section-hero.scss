@@ -6,6 +6,8 @@
     text-align: center;
     background-image: url("../assets/img/background.webp");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 20rem 10rem;
     color: map-get($colors, light);
     font-size: 8rem;
