@@ -1,9 +1,31 @@
 .footer {
-  height: 5rem;
+  height: 8rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   & p {
+    padding-block: 2rem;
     text-align: center;
+  }
+  
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: map-get($colors, dark);
+    gap: 2rem;
+    justify-content: center;
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: map-get($colors, light);
+      height: min-content;
+      padding-inline: 1rem;
+      padding-block: 2rem;
+      &-icon {
+        fill: map-get($colors, light) !important;
+        width: 16px;
+        height: 16px;
+      }
+    }
   }
 }
