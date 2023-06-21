@@ -30,6 +30,27 @@
     
 }
 
+@media screen and (max-width: map-get($breakpoints, mobile) ) {
+    .section-hero {
+        &__title {
+            font-size: 4rem;
+        }
+        &__content-wrapper {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 3%;
 
+            .section-hero__content__item-icon {
+                width: 5rem;
+                height: 5rem;
+            }
 
-
+            .section-hero__content__item {
+                grid-column: auto !important;
+                &:nth-child(5) {
+                    grid-column: 1/span 2 !important;
+                }
+            }
+        }
+    }
+}
