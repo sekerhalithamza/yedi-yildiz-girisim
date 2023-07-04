@@ -6,9 +6,7 @@ if (window.location.href.endsWith("hasanyediyildiz.html")) {
   const linkArray = document.getElementsByClassName("vcard__content");
 
   for (const links of linkArray) {
-    links.addEventListener("click", function () {
-      links.classList.toggle("open");
-    });
+    links.classList.add("open");
   }
 
   const vcardDownloadBtn = document.getElementById("vcardDownloadBtn");
