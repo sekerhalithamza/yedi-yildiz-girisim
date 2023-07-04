@@ -23,103 +23,30 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__nav__logo-wrapper" ref="./index.html">
-        <img class="header__nav__logo" src="assets/img/yediyildiz.png" alt="YediYıldız logo" />
-      </a>
+      <a href="/" class="header-logo"
+        ><img src="assets/img/yediyildiz.webp" alt="YediYıldız Logo" class="header-logo--src"
+      /></a>
+      <button type="button" title="hamburgerBtn" class="header-hamburger-btn" id="hamburgerBtn">
+        <span class="header-hamburger-btn--element"></span>
+      </button>
     </header>
-    <main class="main">
-      <section class="section-hero">
-        <!-- Put the bg img to h1 elem -->
-        <h1 class="section-hero__title">
-          Sizlere özgün ve yenilikçi bir deneyim sunacak olan,
-          <br />
-          heyecanla üzerinde çalıştığımız yeni web sitemiz
-          <br />
-          yakında sizlerle!
-        </h1>
-        <div class="section-hero__content">
-          <div class="section-hero__content-wrapper">
-            <div class="section-hero__content__item">
-              <svg class="section-hero__content__item-icon">
-                <use xlink:href="assets/svg/sprite.svg#house"></use>
-              </svg>
-              <h3 class="section-hero__content__item-title">gayrimenkul</h3>
-              <p>
-                Tüm hizmetlerimiz ve iletişimiz sırasında önem verdiğimiz diğer bir önccelik ise
-                zamanınız! Hem Mülk sahibi müşterilerimizi hem de mülk arayışı içinde olan
-                müşterilermizi hızlıca sonuca ulaştırıyoruz.
-              </p>
-            </div>
-            <div class="section-hero__content__item">
-              <svg class="section-hero__content__item-icon">
-                <use xlink:href="assets/svg/sprite.svg#building"></use>
-              </svg>
-              <h3 class="section-hero__content__item-title">inşaat</h3>
-              <p>
-                İnşaat sektöründe yıllar boyunca edindiğimiz bilgi birikimi ve tecrübeleri ile
-                Yedyıldız Ofisi’nin hedefi; yatırımcılara modern, kaliteli, ekonomik ve güvenli
-                çözümler üretmektir.
-              </p>
-            </div>
-            <div class="section-hero__content__item">
-              <svg class="section-hero__content__item-icon">
-                <use xlink:href="assets/svg/sprite.svg#camera"></use>
-              </svg>
-              <h3 class="section-hero__content__item-title">medya</h3>
-              <p>
-                Yediyıldız Ofisi Görsel Tasarım, Kurumsal Kimlik, Web Hizmetleri, Video Prodüksiyon,
-                Fotograf Prodüksiyon, Organizasyon ve Proje Danışmanlık konularında yeni nesil
-                iletişim çözümleri üretir.
-              </p>
-            </div>
-            <div class="section-hero__content__item">
-              <svg class="section-hero__content__item-icon">
-                <use xlink:href="assets/svg/sprite.svg#people"></use>
-              </svg>
-              <h3 class="section-hero__content__item-title">organizasyon</h3>
-              <p>
-                Biz Yediyıldız Şirketi olarak mişterilermize yüksek kaliteli ürünler ve hizmetler
-                sunan önzü bir organizasyonuz. Müşteri memnuniyeti ve kalite odaklılık işimizin
-                temel değerleridir.
-              </p>
-            </div>
-            <div class="section-hero__content__item">
-              <svg class="section-hero__content__item-icon">
-                <use xlink:href="assets/svg/sprite.svg#book"></use>
-              </svg>
-              <h3 class="section-hero__content__item-title">danışmanlık</h3>
-              <p>
-                Yediyıldız olarak gücümüzü, iletişimin farklı disiplinlerinden edindiğimiz
-                tecrübelerimizden alıyoruz. Bu tecrübelerimizle müşterilerimizin kurumsal yapısına
-                özel, sürekliliği olan iletişim stratejileri ile çalışıyoruz.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <nav class="footer__nav">
-        <a class="footer__nav__item" href="https://goo.gl/maps/n7R3ZnyWZ2GpVMjP8/">
-          <svg class="footer__nav__item-icon">
-            <use xlink:href="assets/svg/sprite.svg#location"></use>
-          </svg>
-          Konaklar Mah. Akasyalı Sok. No: 23/2 Beşiktaş / İstanbul
-        </a>
-        <a class="footer__nav__item" href="tel:05326517788">
-          <svg class="footer__nav__item-icon">
-            <use xlink:href="assets/svg/sprite.svg#phone"></use>
-          </svg>
-          05326517788
-        </a>
-        <a class="footer__nav__item" href="mailto:hyediyildiz@gmail.com">
-          <svg class="footer__nav__item-icon">
-            <use xlink:href="assets/svg/sprite.svg#mail"></use>
-          </svg>
-          hyediyildiz@gmail.com
-        </a>
-      </nav>
-      <p>&copy 2023 Yediyıldız. Tüm hakları saklıdır.</p>
-    </footer>
+    <div class="side-bar" id="sideBar">
+      <ul class="side-bar__list">
+        <li class="side-bar__list-item">
+          <a href="" class="side-bar__list-item--link">Hakkımızda</a>
+        </li>
+        <li class="side-bar__list-item">
+          <a href="" class="side-bar__list-item--link">Gayrimenkul</a>
+        </li>
+        <li class="side-bar__list-item"><a href="" class="side-bar__list-item--link">İnşaat</a></li>
+        <li class="side-bar__list-item"><a href="" class="side-bar__list-item--link">Medya</a></li>
+        <li class="side-bar__list-item">
+          <a href="" class="side-bar__list-item--link">Organizasyon</a>
+        </li>
+        <li class="side-bar__list-item">
+          <a href="" class="side-bar__list-item--link">İletişim</a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
