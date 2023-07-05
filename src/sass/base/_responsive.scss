@@ -70,8 +70,25 @@
     text-align: right;
   }
 
+  .section-realestate__content, .section-building__content {
+    flex-direction: column;
+  }
+
+  .section-realestate__content--img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+
   .section-building__content--img {
-    height: 20%;
+    height: 50%;
+    width: 80%;
+    margin-block: 3rem;
+    background-size: cover;
+  }
+
+  .section-realestate__content--img {
+    height: 100%;
     background-size: cover;
   }
 
