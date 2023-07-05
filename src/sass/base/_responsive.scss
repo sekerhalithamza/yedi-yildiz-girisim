@@ -1,4 +1,10 @@
 @media (max-width: 1040px) {
+  html {
+    font-size: 50%; // 1rem = 8px
+  }
+  body {
+    font-size: 1rem;
+  }
   .section-contact--title {
     text-align: center;
   }
@@ -12,6 +18,9 @@
   }
   .section-contact {
     padding-bottom: 4rem;
+  }
+  .footer__nav a {
+    font-size: 2rem;
   }
 }
 
@@ -33,6 +42,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    font-size: 2rem;
   }
 
   .footer__copyright {
@@ -44,5 +54,32 @@
       width: 4rem;
       height: 4rem;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    padding-inline: 4rem;
+  }
+  .section-about__text {
+    max-width: 45%;
+    font-size: 2rem;
+  }
+
+  .section-about__text:nth-child(2) {
+    text-align: right;
+  }
+
+  .section-building__content--img {
+    height: 20%;
+    background-size: cover;
+  }
+
+  .section-contact__list-item-link {
+    text-align: center;
+  }
+
+  .footer__copyright {
+    font-size: 2rem;
   }
 }
