@@ -1,0 +1,26 @@
+.section-building {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10rem;
+  padding-inline: 15rem;
+
+  &__content {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--img {
+      width: 40%;
+      height: fit-content;
+    }
+    &--text {
+      width: 50%;
+      font-size: map-get($font-sizes, xl);
+    }
+  }
+}

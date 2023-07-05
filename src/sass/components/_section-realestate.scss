@@ -1,0 +1,30 @@
+.section-realestate {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 15rem;
+  gap: 3rem;
+  padding-block: 10rem;
+
+  &__content {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--img {
+      width: 40%;
+      height: max-content;
+    }
+
+    &--text {
+      width: 50%;
+      text-align: right;
+      font-size: map-get($font-sizes, xl);
+      font-weight: map-get($font-weights, regular);
+    }
+  }
+}
