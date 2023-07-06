@@ -10,14 +10,16 @@
   &__content {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
 
     &--img {
       width: 40%;
+      margin-bottom: 4rem;
     }
 
     &--text {
-      text-align: right;
+      text-align: center;
       width: 50%;
       font-size: map-get($font-sizes, xl);
     }

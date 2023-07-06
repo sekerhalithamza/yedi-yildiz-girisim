@@ -81,6 +81,28 @@
       }
     }
   }
+
+  &-end {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &--language-btn {
+    background-color: map-get($colors, primary);
+    color: map-get($colors, light);
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1/1;
+    font-size: map-get($font-sizes, xl);
+    font-weight: map-get($font-weights, medium);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .side-bar {

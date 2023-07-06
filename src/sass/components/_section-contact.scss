@@ -1,5 +1,5 @@
 .section-contact {
-  padding-block-start: 2rem;
+  padding-block: 2rem;
   height: max(65vh, fit-content);
   background-color: map-get($colors, dark-2);
   display: grid;
@@ -13,7 +13,9 @@
   &__list {
     list-style: none;
     grid-column: 1 / 1 span;
-
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     &-item {
       width: fit-content;
       height: fit-content;
@@ -24,10 +26,12 @@
         display: flex;
         align-items: center;
         gap: 2rem;
+        font-size: map-get($font-sizes, l);
 
         svg {
           fill: #fafafa;
           width: 5rem;
+          height: 5rem;
         }
 
         span {
@@ -38,7 +42,6 @@
 
         text-decoration: none;
         color: map-get($colors, light);
-        font-size: map-get($font-sizes, base);
       }
     }
   }

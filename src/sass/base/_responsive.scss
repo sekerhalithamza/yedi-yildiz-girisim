@@ -20,7 +20,11 @@
     padding-bottom: 4rem;
   }
   .footer__nav a {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+  .footer__copyright {
+    margin-top: 3rem;
+    font-size: map-get($font-sizes, l);
   }
 }
 
@@ -45,15 +49,13 @@
     font-size: 2rem;
   }
 
-  .footer__copyright {
-    margin-top: 3rem;
+  .section-organization__content--img {
+    width: 50%;
   }
 
-  .footer-socials {
-    a {
-      width: 4rem;
-      height: 4rem;
-    }
+  .footer__socials a {
+    width: 4rem;
+    height: 4rem;
   }
 }
 
@@ -61,23 +63,53 @@
   .section {
     padding-inline: 4rem;
   }
+
+  .section-hero {
+    text-align: center;
+    &--text {
+      width: 90%;
+      align-self: center;
+    }
+  }
+
   .section-about__text {
     max-width: 45%;
-    font-size: 2rem;
+    font-size: map-get($font-sizes, xl);
   }
 
   .section-about__text:nth-child(2) {
     text-align: right;
   }
 
-  .section-realestate__content, .section-building__content {
+  .section-organization__content--img {
+    width: 60%;
+  }
+
+  .section-realestate__content,
+  .section-building__content {
     flex-direction: column;
+  }
+
+  .section-realestate__content--text,
+  .section-building__content--text,
+  .section-media--text,
+  .section-organization__content--text,
+  .section-consulting--text {
+    font-size: 2.8rem;
   }
 
   .section-realestate__content--img {
     width: 80%;
     height: auto;
     margin-bottom: 4rem;
+  }
+
+  .footer__copyright {
+    font-size: map-get($font-sizes, xl);
+  }
+
+  .footer__nav a {
+    font-size: map-get($font-sizes, xl);
   }
 
   .section-building__content--img {
@@ -94,9 +126,21 @@
 
   .section-contact__list-item-link {
     text-align: center;
+    font-size: map-get($font-sizes, l);
   }
 
-  .footer__copyright {
-    font-size: 2rem;
+  .section-contact--title {
+    margin-bottom: 1rem;
+  }
+
+  .header {
+    padding-inline: 4rem;
+  }
+  .header-end {
+    gap: 3rem;
+  }
+
+  .section-about {
+    height: 110vh;
   }
 }
