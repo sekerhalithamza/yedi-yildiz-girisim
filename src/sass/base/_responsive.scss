@@ -77,6 +77,15 @@
     font-size: map-get($font-sizes, xl);
   }
 
+  .section-realestate__content--text {
+    text-align: center;
+    width: 70%;
+  }
+
+  .section-organization__content--text, .section-consulting--text {
+    width: 70%;
+  }
+
   .section-about__text:nth-child(2) {
     text-align: right;
   }
@@ -98,6 +107,10 @@
     font-size: 2.8rem;
   }
 
+  .section-media--text {
+    width: 70%;
+  }
+
   .section-realestate__content--img {
     width: 80%;
     height: auto;
@@ -112,6 +125,10 @@
     font-size: map-get($font-sizes, xl);
   }
 
+  .footer {
+    padding-bottom: 4rem;
+  }
+
   .section-building__content--img {
     height: 50%;
     width: 80%;
@@ -124,9 +141,13 @@
     background-size: cover;
   }
 
+  .section-about__text {
+    font-size: 2.2rem;
+  }
+
   .section-contact__list-item-link {
     text-align: center;
-    font-size: map-get($font-sizes, l);
+    font-size: map-get($font-sizes, xl);
   }
 
   .section-contact--title {
@@ -141,6 +162,30 @@
   }
 
   .section-about {
-    height: 110vh;
+    height: 120vh;
+  }
+
+  .section-building__content {
+    height: 75%;
+    margin-top: -1rem;
+  }
+
+  .section-building__content--text {
+    width: 70%;
+    padding-bottom: 2rem;
+  }
+
+  .section-realestate__content {
+    margin-bottom: 10rem;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .section-building__content--text {
+    font-size: 2.6rem;
+  }
+  .section-building__content--img {
+    object-fit: contain;
   }
 }
