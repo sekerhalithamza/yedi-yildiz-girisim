@@ -1,5 +1,6 @@
 .section-about {
-  background-image: url("../assets/img/section-about.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/img/section-about.webp");
   height: 100vh;
   background-position: bottom;
   background-repeat: no-repeat;
