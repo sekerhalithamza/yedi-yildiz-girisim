@@ -16,7 +16,15 @@ languageBtn.addEventListener("click", function () {
     textElement.innerText = textElement.getAttribute("data-language");
     textElement.setAttribute("data-language", oldText);
   }
-  let oldText = languageBtn.innerText;
-  languageBtn.innerText = languageBtn.getAttribute("data-language");
-  languageBtn.setAttribute("data-language", oldText);
+
+  if (document.documentElement.lang === "tr") document.documentElement.lang = "en";
+  else document.documentElement.lang = "tr";
 });
+
+(function () {
+  for (let textElement of textList) {
+    let oldText = textElement.innerText;
+    textElement.innerText = textElement.getAttribute("data-language");
+    textElement.setAttribute("data-language", oldText);
+  }
+})();

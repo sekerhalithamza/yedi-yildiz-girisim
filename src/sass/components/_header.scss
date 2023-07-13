@@ -1,13 +1,12 @@
 .header {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 10vh;
-  background-color: map-get($colors, dark-2);
+  height: auto;
+  padding-block: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 5rem;
-  box-shadow: 0px 6px 5px rgba(34, 34, 34, 0.25);
   z-index: 5;
 
   &-logo {
@@ -15,7 +14,7 @@
     height: fit-content;
 
     &--src {
-      width: 20rem;
+      width: 30rem;
       height: auto;
     }
   }
@@ -91,7 +90,7 @@
   }
 
   &--language-btn {
-    background-color: map-get($colors, primary);
+    background-color: transparent;
     color: map-get($colors, light);
     height: 100%;
     width: auto;
@@ -107,35 +106,40 @@
 
 .side-bar {
   width: 0;
-  height: 40vh;
-  background-color: map-get($colors, dark);
   padding-block: 2rem;
-  position: fixed;
+  position: absolute;
   right: 0;
-  top: 10vh;
+  top: 11vh;
   transition: all 0.3s ease;
   z-index: 5;
 
   &.active {
-    width: 20rem;
+    width: 60%;
   }
 
   &__list {
     width: 100%;
     height: 100%;
     list-style: none;
-    padding-inline: 10%;
     display: grid;
-    place-items: end;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
 
     &-item {
       width: fit-content;
       height: fit-content;
       margin-block-end: 2rem;
+      grid-row: 1 / 1 span;
+
       &--link {
         color: map-get($colors, light);
         text-decoration: none;
         font-size: map-get($font-sizes, l);
+        transition: all 100ms ease;
+
+        &:hover {
+          border-bottom: 0.2rem map-get($colors, light) solid;
+        }
       }
     }
   }

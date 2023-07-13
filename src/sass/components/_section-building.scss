@@ -22,6 +22,8 @@
       width: 50%;
       font-size: map-get($font-sizes, xl);
       text-align: center;
+      display: inline-flex;
+      flex-direction: column;
     }
   }
 }
