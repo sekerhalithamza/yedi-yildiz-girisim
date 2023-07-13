@@ -4,20 +4,10 @@
   height: auto;
   padding-block: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding-inline: 5rem;
   z-index: 5;
-
-  &-logo {
-    width: fit-content;
-    height: fit-content;
-
-    &--src {
-      width: 30rem;
-      height: auto;
-    }
-  }
 
   &-hamburger-btn {
     position: relative;

@@ -1,25 +1,10 @@
 .section-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/assets/img/section-hero.webp);
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/img/section-hero.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: right;
-  gap: 3rem;
-  padding-inline: 7rem;
-
-  &--text {
-    align-self: flex-end;
-    color: map-get($colors, light);
-    font-size: map-get($font-sizes, xl);
-    width: 50%;
-  }
-
-  &--title {
-    color: map-get($colors, light);
-  }
 }
