@@ -29,6 +29,10 @@
 }
 
 @media (max-width: 850px) {
+  .section-hero {
+    background-size: contain;
+    background-color: map-get($colors, logo-background);
+  }
   .section-contact {
     grid-template-columns: 1fr;
   }
@@ -40,6 +44,18 @@
 
   .section {
     padding-inline: 7rem;
+  }
+
+  .section-about, .section-building, .section-media, .section-consulting {
+    height: fit-content;
+  }
+  .section-consulting {
+    padding-block: 5rem 5rem;
+  }
+
+  .section-realestate__content,
+  .section-building__content {
+    flex-direction: column;
   }
 
   .footer__nav {
@@ -56,6 +72,38 @@
   .footer__socials a {
     width: 4rem;
     height: 4rem;
+  }
+
+  .section-consulting {
+    &--text {
+      width: 80%;
+    }
+  }
+
+  .section-contact--title {
+    padding-block: 3rem;
+  }
+  .footer__copyright {
+    margin-top: 5rem;
+  }
+  .footer {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 650px) {
+  .section-organization {
+    height: fit-content;
+    padding-bottom: 5rem;
+    &--title {
+      padding-top: 4rem;
+    }
+  }
+  .section-organization__content {
+    flex-direction: column;
+    &--img {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -92,11 +140,6 @@
 
   .section-organization__content--img {
     width: 60%;
-  }
-
-  .section-realestate__content,
-  .section-building__content {
-    flex-direction: column;
   }
 
   .section-realestate__content--text,
@@ -179,6 +222,13 @@
     margin-bottom: 10rem;
   }
 
+  .section-about__content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .section-about__text {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 350px) {

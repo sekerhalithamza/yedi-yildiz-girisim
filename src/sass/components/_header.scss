@@ -102,9 +102,11 @@
   top: 11vh;
   transition: all 0.3s ease;
   z-index: 5;
+  display: none;
 
   &.active {
     width: 60%;
+    display: block;
   }
 
   &__list {

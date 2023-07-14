@@ -2,11 +2,15 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding-inline: 15rem;
-  gap: 3rem;
-  padding-block: 10rem;
+  gap: 5rem;
+  padding-block: 7rem 7rem;
+  background-color: map-get($colors, background-2 );
+
+  &--title {
+    color: map-get($colors, primary-dark);
+  }
 
   &__content {
     width: 100%;
@@ -21,7 +25,7 @@
     }
 
     &--text {
-      width: 50%;
+      width: 55%;
       text-align: center;
       font-size: map-get($font-sizes, xl);
       font-weight: map-get($font-weights, regular);
