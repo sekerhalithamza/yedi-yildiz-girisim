@@ -7,7 +7,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-block: 12rem;
 
   &--title {
     color: map-get($colors, light);
