@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   height: auto;
-  padding-block: 2rem;
+  padding-block: 0rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -17,6 +17,7 @@
     display: grid;
     place-items: center;
     background: transparent;
+    z-index: 6;
 
     &:hover {
       cursor: pointer;
@@ -95,7 +96,7 @@
 }
 
 .side-bar {
-  width: 0;
+  width: fit-content;
   padding-block: 2rem;
   position: absolute;
   right: 0;
@@ -105,9 +106,16 @@
   display: none;
 
   &.active {
-    width: 60%;
+    gap: 1rem;
     display: block;
-  }
+    padding-right: 2rem;
+    max-width: 60%;
+    .side-bar__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+    }
+  } 
 
   &__list {
     width: 100%;

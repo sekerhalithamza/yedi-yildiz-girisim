@@ -24,7 +24,8 @@
   }
   .footer__copyright {
     margin-top: 3rem;
-    font-size: map-get($font-sizes, l);
+    font-size: map-get($font-sizes, xl);
+    padding-bottom: 0.3rem;
   }
 }
 
@@ -44,6 +45,14 @@
 
   .section {
     padding-inline: 7rem;
+  }
+
+  .section-realestate__content--text, .section-building__content--text, .section-organization__content--text, .section-media--text {
+    width: 75%;
+  }
+
+  .section-building__content--text {
+    padding-top: 4rem;
   }
 
   .section-about, .section-building, .section-media, .section-consulting {
@@ -205,7 +214,7 @@
   }
 
   .section-about {
-    height: 120vh;
+    height: fit-content;
   }
 
   .section-building__content {
