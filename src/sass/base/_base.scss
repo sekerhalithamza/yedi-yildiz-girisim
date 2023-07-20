@@ -49,3 +49,7 @@ body {
   font-size: map-get($font-sizes, heading-3);
   font-weight: map-get($font-weights, medium);
 }
+
+h2 {
+  border-bottom-color: map-get($colors, "primary-light") !important;
+}

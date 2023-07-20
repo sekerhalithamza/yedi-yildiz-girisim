@@ -1,9 +1,20 @@
+// super duper css code(i have no idea what output this will produce)
+html {
+  --s: 40px; /* control the size */
+  
+  --c: #0000 75%,#09226d 0;
+  --g1: conic-gradient(at 75% 25%,var(--c));
+  --g2: conic-gradient(at 25% 75%,var(--c));
+  background: 
+    var(--g1),var(--g1) var(--s) var(--s),
+    var(--g2),var(--g2) var(--s) var(--s) #5565b7;
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+}
+
 .footer {
   width: 100%;
   height: 25vh;
   overflow: hidden;
-  background-image: linear-gradient(rgba(0, 7, 45, 0.41), rgba(0, 7, 45, 0.41)),
-    url(/assets/footer.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
