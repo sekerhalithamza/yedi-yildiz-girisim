@@ -16,15 +16,26 @@
     <header class="header">
       <img src="assets/logo.webp" alt="Yediyıldız Logo" class="header--logo" />
       <ul class="header__list">
-        <li class="header__list-item"><a href="#projects">Projeler</a></li>
-        <li class="header__list-item"><a href="#about">Hakkımızda</a></li>
-        <li class="header__list-item"><a href="#references">Referanslar</a></li>
-        <li class="header__list-item"><a href="#contact">İletişim</a></li>
+        <li class="header__list-item">
+          <a href="#projects" class="text" data-language="Projeler">Projects</a>
+        </li>
+        <li class="header__list-item">
+          <a href="#about" class="text" data-language="Hakkımızda">About</a>
+        </li>
+        <li class="header__list-item">
+          <a href="#references" class="text" data-language="Referanslar">References</a>
+        </li>
+        <li class="header__list-item">
+          <a href="#contact" class="text" data-language="İletişim">Contact</a>
+        </li>
       </ul>
+      <button type="button" id="languageBtn">EN | TR</button>
     </header>
     <main class="main">
       <section class="section section-hero">
-        <h2 class="section-hero--title heading-secondary">
+        <h2
+          class="section-hero--title heading-secondary text"
+          data-language="Kaliteli inşaat ve altyapıda lider">
           LEADERS IN QUALITY CONSTRUCTION AND INFRASTRUCTURE
         </h2>
         <a href="#projects" class="section-hero--btn">
@@ -39,21 +50,84 @@
           PROJECTS
         </h2>
         <div class="section-projects__container">
-          <p data-language="GAYRİMENKUL" class="section-projects__container--text">REAL ESTATE</p>
+          <p data-language="GAYRİMENKUL" class="section-projects__container--text text">
+            REAL ESTATE
+          </p>
         </div>
         <div class="section-projects__container">
-          <p class="section-projects__container--text" data-language="İNŞAAT">CONSTRUCTION</p>
+          <p class="section-projects__container--text text" data-language="İNŞAAT">CONSTRUCTION</p>
         </div>
         <div class="section-projects__container">
-          <p class="section-projects__container--text" data-language="MEDYA">MEDIA</p>
+          <p class="section-projects__container--text text" data-language="MEDYA">MEDIA</p>
         </div>
         <div class="section-projects__container">
-          <p class="section-projects__container--text" data-language="ORGANİZASYON">ORGANIZATION</p>
+          <p class="section-projects__container--text text" data-language="ORGANİZASYON">
+            ORGANIZATION
+          </p>
         </div>
         <div class="section-projects__container">
-          <p class="section-projects__container--text" data-language="DANIŞMANLIK">CONSULTING</p>
+          <p class="section-projects__container--text text" data-language="DANIŞMANLIK">
+            CONSULTING
+          </p>
         </div>
       </section>
+      <section class="section section-about" id="about">
+        <div class="section-about__container">
+          <h2
+            class="section-about__container--title heading-secondary text"
+            data-language="HAKKIMIZDA">
+            ABOUT
+          </h2>
+          <p
+            class="section-about__container--text text"
+            data-language="2009 yılında resmi olarak İstanbul’da kurulan Yediyıldız Girişim Ofisi Gayrimenkul, İnşaat, Medya ve Danışmanlık alanlarında 28 yıllık bir deneyime sahiptir. Şirketimiz, çözüm ortaklığı yaptığı kişi ve kurumlara verdiği hizmetler ile değer yaratmayı ve geleceğin yeni nesil iş yapma pratikleriyle fark yaratmayı hedeflemektedir.">
+            Established officially in Istanbul in 2009, Yediyıldız Girişim Office has 28 years of
+            experience in Real Estate, Construction, Media, and Consultancy fields. Our company aims
+            to create value for the individuals and organizations we partner with through the
+            services we provide and strives to make a difference with the next generation business
+            practices of the future.
+          </p>
+          <p
+            class="section-about__container--text text"
+            data-language="Vizyonumuz; geleceğin dünyasında öncü bir kuruluş olmak, müşterilerimize güvenilir, etkileyici çözümler sunmak. Müşterilerimizin başarılarına ortak olmayı ve iş dünyasında değer yaratmayı amaçlıyoruz.">
+            Our vision is to be a leading organization in the world of the future, providing our
+            customers with reliable and impactful solutions. We aim to be a partner in our
+            customers' successes and to create value in the business world.
+          </p>
+        </div>
+        <img src="assets/section-about.webp" class="section-about--img" alt="Construction Image" />
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <nav class="footer__nav">
+          <a href="#about" class="text" data-language="Hakkımızda">About</a>
+          <a href="#projects" class="text" data-language="Projeler">Projects</a>
+          <a href="#references" class="text" data-language="Referanslar">References</a>
+          <a href="#contact" class="text" data-language="İletişim">Contact</a>
+        </nav>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/hyediyıldız/">
+            <svg>
+              <use xlink:href="assets/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+          <a href="">
+            <svg>
+              <use xlink:href="assets/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/hyediyildiz/">
+            <svg>
+              <use xlink:href="assets/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>©️ 2009 Yediyıldız</p>
+        <p class="text" data-language="Tüm hakları saklıdır.">All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: none;
+  outline: none;
 }
 
 html {
@@ -11,6 +13,7 @@ html {
   font-family: "Sen", sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color: map-get($colors, dark-1);
 }
 
 body {
@@ -39,6 +42,7 @@ body {
 .heading-secondary {
   font-size: map-get($font-sizes, heading-2);
   font-weight: map-get($font-weights, semi-bold);
+  border-bottom: 1rem solid map-get($colors, dark-2);
 }
 
 .heading-third {

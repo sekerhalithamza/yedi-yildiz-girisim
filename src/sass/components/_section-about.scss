@@ -1,0 +1,28 @@
+.section-about {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: map-get($colors, light-3);
+  place-items: center;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-inline: 5rem;
+    align-items: flex-start;
+    gap: 5rem;
+
+    &--title {
+      width: fit-content;
+    }
+
+    &--text {
+      font-size: map-get($font-sizes, m);
+    }
+  }
+
+  &--img {
+    height: 80%;
+  }
+}
