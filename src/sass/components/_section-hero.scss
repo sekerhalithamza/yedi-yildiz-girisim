@@ -22,6 +22,10 @@
   &--btn {
     height: min-content;
     width: min-content;
+    transition: all 400ms ease ;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &--icon {
