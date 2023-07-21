@@ -3,7 +3,9 @@
   height: 25vh;
   overflow: hidden;
   color: map-get($colors, light);
-  background-color: map-get($colors, dark-2);
+  background-image: url(/assets/footer.svg);
+  background-position: bottom;
+  background-size: cover;
 
   &__content {
     display: flex;
