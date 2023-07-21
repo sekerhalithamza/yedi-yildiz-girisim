@@ -1,9 +1,7 @@
 .section-about {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
-  background-color: map-get($colors, light-3);
-  place-items: center;
+  background-color: #6096b4;
+  padding-block: 2rem;
 
   &__container {
     display: flex;
@@ -11,14 +9,20 @@
     flex-direction: column;
     padding-inline: 5rem;
     align-items: flex-start;
-    gap: 5rem;
+    justify-content: flex-start;
+    height: 80%;
+    gap: 2rem;
 
     &--title {
       width: fit-content;
+      text-align: center;
+      align-self: center;
+      color: map-get($colors, light-1);
     }
 
     &--text {
       font-size: map-get($font-sizes, m);
+      color: map-get($colors, light-1);
     }
   }
 

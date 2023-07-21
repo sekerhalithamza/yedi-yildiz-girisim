@@ -1,18 +1,20 @@
 .section-projects {
+  padding-block: 1rem;
   display: grid;
-  padding-inline: 30rem;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  padding-inline: 0.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 10fr;
   place-items: center;
-  column-gap: 5rem;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
   background-color: map-get($colors, light-1);
-  row-gap: 5rem;
-  padding-block-end: 10rem;
+  padding-block-end: 3rem;
 
   &--title {
-    grid-column: 3 / 2 span;
+    grid-column: 1 / 5 span;
     grid-row: 1 / 1 span;
     text-align: center;
+    align-self: center;
   }
 
   &__container {
@@ -22,8 +24,8 @@
     height: auto;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: end;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,38 +34,35 @@
 
     &--text {
       color: map-get($colors, light-1);
-      font-size: map-get($font-sizes, xl);
-      opacity: 0;
+      font-size: map-get($font-sizes, l);
       transition: all 400ms ease;
+      background-color: rgba(map-get($colors, dark-1), 0.7);
+      width: 100%;
+      padding-block: 0.5rem;
     }
 
     &:nth-child(2) {
-      grid-column: 1 / 2 span;
       grid-row: 2 / 1 span;
       background-image: url(/assets/real-estate.webp);
     }
 
     &:nth-child(3) {
-      grid-column: 3 / 2 span;
       grid-row: 2 / 1 span;
       background-image: url(/assets/construction.webp);
     }
 
     &:nth-child(4) {
-      grid-column: 5 / 2 span;
       grid-row: 2 / 1 span;
       background-image: url(/assets/media.webp);
     }
 
     &:nth-child(5) {
-      grid-column: 2 / 2 span;
-      grid-row: 3 / 1 span;
+      grid-row: 2 / 1 span;
       background-image: url(/assets/organization.webp);
     }
 
     &:nth-child(6) {
-      grid-column: 4 / 2 span;
-      grid-row: 3 / 1 span;
+      grid-row: 2 / 1 span;
       background-image: url(/assets/consulting.webp);
     }
     background-blend-mode: multiply;
@@ -71,10 +70,5 @@
 
   &__container:hover {
     cursor: pointer;
-    background-color: rgba(map-get($colors, dark-1), 0.5);
-    background-size: 120%;
-    .section-projects__container--text {
-      opacity: 1;
-    }
   }
 }
