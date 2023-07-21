@@ -14,14 +14,14 @@
 
   &__wrapper {
     display: flex;
-    gap: 5rem;
+    flex-wrap: wrap;
   }
 
   &__container {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-block: 5rem;
+    padding-block: 2rem;
     gap: 2rem;
     align-items: flex-start;
 

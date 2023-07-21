@@ -13,10 +13,8 @@
     text-align: center;
     color: map-get($colors, light-1);
     border: none;
-    position: absolute;
-    top: 18rem;
-    left: 14rem;
-    font-size: map-get($font-sizes, base);
+    font-size: map-get($font-sizes, l);
+    max-width: 80%;
   }
 
   &--btn {
@@ -30,6 +28,10 @@
     height: 10rem;
     animation: fadein 0.8s ease 0s;
     position: relative;
+    transition: all 0.2s ease;
+    &:hover {
+      fill: map-get($colors, "primary-light-2");
+    }
   }
 
   &--bg {
