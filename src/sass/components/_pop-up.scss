@@ -38,6 +38,16 @@
       font-size: map-get($font-sizes, m);
       font-weight: map-get($font-weights, regular);
     }
+
+    &--btn {
+      display: inline-block;
+      color: map-get($colors, light-1);
+      text-decoration: none;
+      background-color: map-get($colors, primary-light);
+      padding-block: 2rem;
+      padding-inline: 3rem;
+      width: fit-content;
+    }
   }
 
   &--img,
