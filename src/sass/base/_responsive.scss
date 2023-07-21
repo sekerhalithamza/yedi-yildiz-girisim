@@ -1,0 +1,73 @@
+@media (max-width: 800px) {
+  .header--logo {
+    height: 50%;
+  }
+  .header #languageBtn {
+    font-size: 2rem;
+  }
+
+  .section-projects {
+    padding-inline: 10rem;
+  }
+
+  .header__list-item a {
+    font-size: 1.7rem;
+  }
+
+  .section-hero--title {
+    font-size: 4.5rem;
+  }
+
+  .section-about {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .section-about--img {
+    padding-inline: 3rem;
+  }
+
+  .section-about__container {
+    padding-inline: 3rem;
+  }
+  .section-contact__container {
+    padding-inline: 4rem;
+  }
+
+  .section-contact__container iframe {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .header__list {
+    display: none;
+  }
+
+  .section-hero--title {
+    font-size: 3rem;
+  }
+
+  .section-contact__container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section-about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+  }
+
+  .section-contact__container iframe {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-projects {
+    padding-inline: 2rem;
+  }
+
+  .section-hero--title {
+    font-size: 2rem;
+  }
+}
