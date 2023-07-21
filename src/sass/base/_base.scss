@@ -40,9 +40,8 @@ body {
 }
 
 .heading-secondary {
-  font-size: map-get($font-sizes, heading-2);
+  font-size: map-get($font-sizes, xl);
   font-weight: map-get($font-weights, semi-bold);
-  border-bottom: 1rem solid map-get($colors, dark-2);
 }
 
 .heading-third {
