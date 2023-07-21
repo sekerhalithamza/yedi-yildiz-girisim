@@ -1,0 +1,54 @@
+.section-contact {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 1rem;
+
+  &--title {
+    width: fit-content;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 5rem;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 5rem;
+    gap: 2rem;
+    align-items: flex-start;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      &-item {
+        color: black;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+    iframe {
+      height: 30rem;
+      width: 40rem;
+    }
+
+    &--title {
+      font-size: map-get($font-sizes, l);
+      font-weight: map-get($font-weights, medium);
+    }
+  }
+}

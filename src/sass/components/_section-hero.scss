@@ -1,4 +1,5 @@
 .section-hero {
+  position: relative;
   height: fit-content;
   position: relative;
   display: flex;
@@ -9,10 +10,13 @@
   padding-block: 25rem;
 
   &--title {
-    width: 50%;
     text-align: center;
     color: map-get($colors, light-1);
     border: none;
+    position: absolute;
+    top: 18rem;
+    left: 14rem;
+    font-size: map-get($font-sizes, base);
   }
 
   &--btn {

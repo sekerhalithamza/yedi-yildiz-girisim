@@ -58,12 +58,12 @@
 
     &:nth-child(5) {
       grid-row: 2 / 1 span;
-      background-image: url(/assets/organization.webp);
+      background-image: url(/assets/consulting.webp);
     }
 
     &:nth-child(6) {
       grid-row: 2 / 1 span;
-      background-image: url(/assets/consulting.webp);
+      background-image: url(/assets/organization.webp);
     }
     background-blend-mode: multiply;
   }
