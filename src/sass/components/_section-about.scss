@@ -1,21 +1,23 @@
 .section-about {
   display: grid;
   background-color: #6096b4;
-  padding-block: 3rem 5rem;
+  padding-block: 3rem;
 
   &__container {
     display: flex;
     width: 100%;
+    width: 90%;
     flex-direction: column;
     padding-inline: 5rem;
     align-items: flex-start;
     justify-content: flex-start;
-    height: fit-content;
+    height: 80%;
     gap: 2rem;
 
     &--title {
       width: fit-content;
-      align-self: flex-start;
+      text-align: center;
+      align-self: center;
       color: map-get($colors, light-1);
     }
 

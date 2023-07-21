@@ -1,26 +1,16 @@
 .footer {
   width: 100%;
-  height: fit-content;
+  height: 25vh;
   overflow: hidden;
   color: map-get($colors, light);
-  // background-image: url(/assets/footer.svg);
-  //background-position: bottom;
-  //background-size: cover;
-  background-color: map-get($colors, primary-dark-2);
-
-  padding: 0 0 1rem 3rem;
-
-  &__logo {
-    width: 20rem;
-    aspect-ratio: 6/2;
-    height: fit-content;
-  }
+  background-image: url(/assets/footer.svg);
+  background-position: bottom;
+  background-size: cover;
 
   &__content {
     display: flex;
     height: 70%;
     width: 100%;
-    align-items: center;
   }
   &__nav {
     display: flex;

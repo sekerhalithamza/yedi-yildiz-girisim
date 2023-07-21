@@ -1,83 +1,74 @@
 .section-projects {
   padding-block: 1rem;
+  display: grid;
   padding-inline: 0.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 10fr;
   place-items: center;
   column-gap: 0.5rem;
   row-gap: 1rem;
-  background-color: map-get($colors, light-2);
-  padding-block-end: 6rem;
+  background-color: map-get($colors, light-1);
+  padding-block-end: 3rem;
 
   &--title {
     grid-column: 1 / 5 span;
     grid-row: 1 / 1 span;
     text-align: center;
     align-self: center;
-    padding-block: 4rem;
   }
 
-  &__content {
+  &__container {
+    display: inline-block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-    &-item {
+    justify-content: flex-start;
+    align-items: end;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 500ms ease;
+    text-decoration: none;
+
+    &--text {
+      color: map-get($colors, light-1);
+      font-size: map-get($font-sizes, l);
+      transition: all 400ms ease;
+      background-color: rgba(map-get($colors, dark-1), 0.7);
       width: 100%;
-      aspect-ratio: 3/2;
-      height: auto;
-      text-align: center;
-      display: flex;
-      justify-content: flex-start;
-      align-items: end;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: all 500ms ease;
-      text-decoration: none;
-
-      width: 32rem;
-      height: auto;
-      box-shadow: 0px 0px 5px 0px rgba(31, 31, 31, 0.701);
-
-      &--text {
-        color: map-get($colors, light-1);
-        font-size: map-get($font-sizes, l);
-        transition: all 400ms ease;
-        background-color: rgba(map-get($colors, dark-1), 0.7);
-        width: 100%;
-        padding-block: 0.5rem;
-      }
-
-      &:nth-child(1) {
-        grid-row: 2 / 1 span;
-        background-image: url(/assets/real-estate.webp);
-      }
-
-      &:nth-child(2) {
-        grid-row: 2 / 1 span;
-        background-image: url(/assets/construction.webp);
-      }
-
-      &:nth-child(3) {
-        grid-row: 2 / 1 span;
-        background-image: url(/assets/media.webp);
-      }
-
-      &:nth-child(4) {
-        grid-row: 2 / 1 span;
-        background-image: url(/assets/consulting.webp);
-      }
-
-      &:nth-child(5) {
-        grid-row: 2 / 1 span;
-        background-image: url(/assets/organization.webp);
-      }
-
-      &:hover {
-        transform: scale(1.02);
-        
-      }
-
-      background-blend-mode: multiply;
+      padding-block: 0.5rem;
     }
+
+    &:nth-child(2) {
+      grid-row: 2 / 1 span;
+      background-image: url(/assets/real-estate.webp);
+    }
+
+    &:nth-child(3) {
+      grid-row: 2 / 1 span;
+      background-image: url(/assets/construction.webp);
+    }
+
+    &:nth-child(4) {
+      grid-row: 2 / 1 span;
+      background-image: url(/assets/media.webp);
+    }
+
+    &:nth-child(5) {
+      grid-row: 2 / 1 span;
+      background-image: url(/assets/consulting.webp);
+    }
+
+    &:nth-child(6) {
+      grid-row: 2 / 1 span;
+      background-image: url(/assets/organization.webp);
+    }
+    background-blend-mode: multiply;
+  }
+
+  &__container:hover {
+    cursor: pointer;
   }
 }
