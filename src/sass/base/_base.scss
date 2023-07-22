@@ -52,3 +52,9 @@ body {
 h2 {
   border-bottom-color: map-get($colors, "primary-light") !important;
 }
+
+#languageBtn {
+  background-color: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+}

@@ -25,9 +25,8 @@
       font-weight: map-get($font-weights, semi-bold);
       width: 70%;
       display: flex;
-      align-self: center;
+      align-self: flex-start;
       justify-self: center;
-      text-align: center;
     }
 
     &--text {
