@@ -40,6 +40,7 @@
     background-position: center;
     transition: all 500ms ease;
     text-decoration: none;
+    background-size: cover;
 
     &:hover {
       transform: scale(1.02);
@@ -56,27 +57,27 @@
     }
 
     &:nth-child(1) {
-      grid-row: 2 / 1 span;
+      //grid-row: 2 / 1 span;
       background-image: url(/assets/real-estate.webp);
     }
 
     &:nth-child(2) {
-      grid-row: 2 / 1 span;
+      //grid-row: 2 / 1 span;
       background-image: url(/assets/construction.webp);
     }
 
     &:nth-child(3) {
-      grid-row: 2 / 1 span;
+      //grid-row: 2 / 1 span;
       background-image: url(/assets/media.webp);
     }
 
     &:nth-child(4) {
-      grid-row: 2 / 1 span;
+      //grid-row: 2 / 1 span;
       background-image: url(/assets/consulting.webp);
     }
 
     &:nth-child(5) {
-      grid-row: 2 / 1 span;
+      //grid-row: 2 / 1 span;
       background-image: url(/assets/organization.webp);
     }
     background-blend-mode: multiply;
