@@ -2,6 +2,7 @@ let currentLang = localStorage.getItem("lang");
 if (currentLang == null) {
   currentLang = "EN";
   localStorage.setItem("lang", currentLang);
+  console.log("changed the lang to EN because 'lang' is null");
 }
 
 console.log("currentlang", currentLang);
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(currentLang);
   if (currentLang == "EN") {
   } else if (currentLang == "TR") {
+    currentLang = "EN";
     applyLang();
   }
 });
