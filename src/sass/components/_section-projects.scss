@@ -1,17 +1,17 @@
 .section-projects {
-  padding-block: 1rem;
+  padding-block: 2rem 4rem;
   padding-inline: 0.5rem;
   place-items: center;
   column-gap: 0.5rem;
   row-gap: 1rem;
   background-color: map-get($colors, light-2);
-  padding-block-end: 3rem;
 
   &--title {
     grid-column: 1 / 5 span;
     grid-row: 1 / 1 span;
     text-align: center;
     align-self: center;
+    padding-bottom: 2rem;
   }
 
   &__wrapper {
