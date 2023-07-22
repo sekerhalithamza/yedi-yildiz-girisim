@@ -1,6 +1,6 @@
 .section-projects {
   padding-block: 2rem 4rem;
-  padding-inline: 0;
+  padding-inline: 2rem;
   place-items: center;
   column-gap: 0;
   row-gap: 1rem;
@@ -18,8 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
   }
 
   &__container {
