@@ -19,6 +19,7 @@
     gap: 2rem;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 
     &--slogan {
       font-size: map-get($font-sizes, m);
