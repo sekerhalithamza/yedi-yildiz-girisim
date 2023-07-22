@@ -1,8 +1,8 @@
 .section-projects {
   padding-block: 2rem 4rem;
-  padding-inline: 0.5rem;
+  padding-inline: 0;
   place-items: center;
-  column-gap: 0.5rem;
+  column-gap: 0;
   row-gap: 1rem;
   background-color: map-get($colors, light-2);
 
@@ -19,12 +19,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 0;
   }
 
   &__container {
     display: inline-block;
-    width: 40rem;
+    width: 30rem;
     aspect-ratio: 3/2;
     height: auto;
     text-align: center;
