@@ -19,12 +19,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: 1rem;
   }
 
   &__container {
     display: inline-block;
-    width: 30rem;
+    width: 29rem;
     aspect-ratio: 3/2;
     height: auto;
     text-align: center;
