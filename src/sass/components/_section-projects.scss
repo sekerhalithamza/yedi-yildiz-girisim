@@ -15,15 +15,20 @@
   }
 
   &__wrapper {
+    /*
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: auto;
   }
 
   &__container {
     display: inline-block;
-    width: 29rem;
+    //width: 29rem;
     aspect-ratio: 3/2;
     height: auto;
     text-align: center;
