@@ -24,6 +24,7 @@
     height: min-content;
     width: min-content;
     transition: all 400ms ease;
+    visibility: hidden;
     &:hover {
       transform: scale(1.02) translateY(0.5rem);
     }
