@@ -10,18 +10,15 @@
     height: 60vh;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 
     &__content {
       height: fit-content;
-      position: absolute;
       background-color: transparent;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
       width: 100%;
       display: grid;
       grid-template-rows: 1fr;
-      grid-template-columns: repeat(20, 1fr);
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       column-gap: 5%;
       place-items: center;
       transition: transform 0.4s ease;
@@ -64,7 +61,7 @@
   }
 
   &--img {
-    width: 15vw;
+    width: 10vw;
     height: auto;
     object-fit: contain;
   }
