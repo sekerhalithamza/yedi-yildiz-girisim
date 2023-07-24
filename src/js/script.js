@@ -37,3 +37,25 @@ function applyLang() {
   localStorage.setItem("lang", currentLang);
   console.log(currentLang);
 }
+
+/*
+
+const gallery = document.getElementById("gallery");
+const galleryBtns = document.getElementsByClassName("section-references--chevron");
+var galleryPosition = 0;
+
+for (let btn of galleryBtns) {
+  btn.addEventListener("click", function () {
+    let direction = btn.getAttribute("data-direction");
+    if (direction === "right")
+      if (galleryPosition <= 10) {
+        galleryPosition *= -1;
+      } else galleryPosition -= 25;
+    else if (galleryPosition >= 50) {
+      galleryPosition *= -1;
+    } else galleryPosition += 25;
+    gallery.style.transform = `translateX(-50%) translateY(-50%) translateX(${galleryPosition}vw)`;
+  });
+}
+
+*/
