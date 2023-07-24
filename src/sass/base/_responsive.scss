@@ -100,7 +100,11 @@
 
   .section-references__container__content {
     grid-template-columns: 1fr;
-    row-gap: 10%;
+    row-gap: 8%;
+  }
+
+  .section-references__container {
+    height: 110vh;
   }
 
   .section-references--img {
@@ -148,6 +152,10 @@
 
   .section-references--img {
     width: 12rem;
+  }
+
+  .section-references__container {
+    height: 85vh;
   }
 
   .section-hero--title {
