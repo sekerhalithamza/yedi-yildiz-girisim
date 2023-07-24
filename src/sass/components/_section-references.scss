@@ -2,19 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block: 10rem;
-  gap: 10rem;
+  padding-block: 5rem;
 
   &__container {
     position: relative;
     width: 100%;
     height: 60vh;
     display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
     align-items: center;
 
     &__content {
+      height: fit-content;
       position: absolute;
       background-color: transparent;
       top: 50%;
@@ -24,7 +22,7 @@
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: repeat(20, 1fr);
-      column-gap: 5vw;
+      column-gap: 5%;
       place-items: center;
       transition: transform 0.4s ease;
     }

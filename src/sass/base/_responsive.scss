@@ -99,9 +99,8 @@
   }
 
   .section-references__container__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    row-gap: 10%;
   }
 
   .section-references--img {
