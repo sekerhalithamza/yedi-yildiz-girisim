@@ -98,6 +98,16 @@
     display: none;
   }
 
+  .section-references__container__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section-references--img {
+    width: 15rem;
+  }
+
   .section-hero--title {
     font-size: 3rem;
     position: static;
@@ -135,6 +145,10 @@
 @media (max-width: 470px) {
   .section-projects {
     padding-inline: 2rem;
+  }
+
+  .section-references--img {
+    width: 12rem;
   }
 
   .section-hero--title {
