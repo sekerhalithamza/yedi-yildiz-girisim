@@ -23,6 +23,15 @@
     flex-wrap: wrap;
     overflow: scroll;
 
+    &::-webkit-scrollbar {
+      display: block;
+      height: 100%;
+    }
+    &::-webkit-scrollbar-thumb {
+      display: block;
+      background-color: rgb(132, 180, 219);
+    }
+
     &--slogan {
       font-size: map-get($font-sizes, m);
       font-weight: map-get($font-weights, semi-bold);
