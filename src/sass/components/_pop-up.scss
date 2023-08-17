@@ -20,6 +20,8 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    flex-wrap: wrap;
+    overflow: scroll;
 
     &--slogan {
       font-size: map-get($font-sizes, m);
@@ -50,8 +52,9 @@
   &--video {
     grid-column: 2 / 1 span;
     grid-row: 2 / 1 span;
-    height: 90%;
-    width: 80%;
+    height: 100%;
+    width: 45%;
+    flex-grow: 1;
     place-self: end;
     align-self: center;
     object-fit: cover;
